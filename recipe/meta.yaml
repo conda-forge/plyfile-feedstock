@@ -1,5 +1,5 @@
 {% set name = "plyfile" %}
-{% set version = "0.7.1" %}
+{% set version = "0.7.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: b119705dec157314cf504e9d2d6f7d5a76606495a778b673c2864ac92895dced
+  sha256: 59a25845d00a51098e6c9147c3c96ce89ad97395e256a4fabb4aed7cf7db5541
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -31,7 +31,7 @@ about:
   license: GPL-3.0
   license_family: GPL
   license_file: COPYING
-  summary: 'NumPy-based text/binary PLY file reader/writer for Python'
+  summary: NumPy-based text/binary PLY file reader/writer for Python
   dev_url: https://github.com/dranjan/python-plyfile
 
 extra:
