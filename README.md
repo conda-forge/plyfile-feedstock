@@ -5,11 +5,11 @@ Home: https://github.com/dranjan/python-plyfile
 
 Package license: GPL-3.0
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/plyfile-feedstock/blob/master/LICENSE.txt)
 
 Summary: NumPy-based text/binary PLY file reader/writer for Python
 
-
+Development: https://github.com/dranjan/python-plyfile
 
 Current build status
 ====================
