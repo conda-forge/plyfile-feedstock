@@ -28,7 +28,7 @@ test:
 
 about:
   home: https://github.com/dranjan/python-plyfile
-  license: GPL-3.0
+  license: GPL-3.0-only
   license_family: GPL
   license_file: COPYING
   summary: NumPy-based text/binary PLY file reader/writer for Python
