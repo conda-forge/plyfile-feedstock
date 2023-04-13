@@ -1,5 +1,5 @@
 {% set name = "plyfile" %}
-{% set version = "0.8.1" %}
+{% set version = "0.9" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: bc61bcb27f37eae77ca6ddb3347a9590271ffcd1c8d5b4d34da95fd58cfcc770
+  sha256: 42b24775c61fb294f9cc93b8fb1987dd03cdb65a041b41549289b7a8005417a4
 
 build:
   noarch: python
