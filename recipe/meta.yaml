@@ -6,24 +6,26 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: a49bdf5285c95b6f7d4b9f2954b7867c44f8e13348606d886d8e0a561f6f4671
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python >=3.8
+    - python {{ python_min }}
     - pip
     - pdm-pep517 >=1.0.0
   run:
-    - python >=3.8
+    - python >={{ python_min }}
     - numpy >=1.17
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - plyfile
 
